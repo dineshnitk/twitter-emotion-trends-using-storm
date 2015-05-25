@@ -3,11 +3,13 @@ About Apache Storm
 Apache Storm is a free and open source distributed real-time fault-tolerant computation system. Storm makes it easy to reliably process unbounded streams of data, doing for real-time processing what Hadoop did for batch processing. Storm is simple, can be used with any programming language. Storm works as a topology where stream of tuples starts from Spouts and goes through bolts for real time computation. 
 
 Some of the key storm abstractions are explained below:
+
 •	Topology is a network of Spouts and Bolts.
 •	Tuple is a named list of values, where each value can be any type
 •	Stream	is an unbounded sequence of tuples that is processed and created in parallel in a distributed fashion
 •	Spout is a source of streams in a topology.
 •	Bolts contains logic of computation such as functions, filters, streaming joins, talking to database etc.
+
 
 Storm topology may be executed in two modes – Local and Distributed modes. Local mode is generally used for development purposes wherein whole topology is run on single machine for a limited time. In production, distributed mode is used with an ever running topology on multiple nodes.
 
